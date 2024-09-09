@@ -1,0 +1,147 @@
+/* Main container for centering and layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e90ff, #ff69b4);
+    overflow: hidden;
+    animation: bgMove 10s infinite alternate;
+  }
+  
+  /* Main logo layout */
+  .logo {
+    display: flex;
+    font-size: 60px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* First letter J in the logo */
+  .jweb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 4px solid hsl(240, 71%, 31%);
+    border-radius: 50%;
+    background: hsl(240, 71%, 31%);
+    color: white;
+    margin-right: 15px;
+    font-size: 90px;
+    animation: bounce 2s infinite;
+  }
+  
+  /* Middle part UGE */
+  .juge {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 70px;
+    animation: fadeIn 3s infinite alternate;
+  }
+  
+  /* Animated spinning W inside UGE */
+  .spinW {
+    position: relative;
+    animation: spin 5s linear infinite;
+  }
+  
+  .lweb {
+    font-size: 90px;
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(255, 255, 0, 0.8);
+  }
+  
+  /* WEB in the logo */
+  .web {
+    font-size: 50px;
+    color: hsl(240, 71%, 31%);
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    animation: glow 3s infinite alternate;
+  }
+  
+  /* Background color animation */
+  @keyframes bgMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Bounce effect for J */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Slow spin animation for W */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Glowing effect for WEB */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow;
+    }
+    100% {
+      text-shadow: 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+    }
+  }
+  
+  /* Fade-in animation for UGE */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .jWeb {
+        font-size: 30px;
+        margin-left: 10px;
+        justify-content: center; /* Center the content on mobile */
+    }
+
+    .jweb {
+        max-width: 40px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .jWeb {
+        font-size: 25px;
+        margin-left: 5px;
+    }
+
+    .jweb {
+        max-width: 30px;
+        padding: 3px;
+    }
+}

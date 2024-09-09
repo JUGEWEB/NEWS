@@ -1,0 +1,128 @@
+/* Overall layout and container */
+/* Container for the entire component */
+.binege-info-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the logo section */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .binege-logo {
+    width: 80px;
+    margin-right: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: hsl(240, 71%, 31%);
+  }
+  
+  /* Section headings */
+  .section {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .section-heading {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: hsl(240, 71%, 31%);
+    transition: color 0.3s;
+  }
+  
+  .section-heading:hover {
+    color: hsl(240, 71%, 40%);
+  }
+  
+  /* Content for each section */
+  .section-content {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background: #ffffff;
+    border-left: 5px solid hsl(240, 71%, 31%);
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 40px;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .bng-logo {
+    width: 50px;
+    float: left;
+    margin-right: 15px;
+  }
+  
+  /* Animation for section transitions */
+  .section-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .language-switch {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .language-switch button {
+    background-color: hsl(240, 71%, 31%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .language-switch button:hover {
+    background-color: hsl(240, 71%, 40%);
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: hsl(240, 71%, 31%);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
